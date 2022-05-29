@@ -6,16 +6,28 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
-    questionIndex = questionIndex + 1;
+    //Change the state
+    setState(() {
+      if (questionIndex < questions.length-1) {
+        questionIndex = questionIndex + 1;
+      }
+    }); // setState
+    print(questionIndex);
   }
 
   var questions = [
     'What is your favourite color?',
-    'What is your favourite novel?'
+    'What is the color of sky?',
+    'What is the color of grass?'
   ];
 
   @override
@@ -28,15 +40,9 @@ class MyApp extends StatelessWidget {
         // body
         body: Column(children: [
           Text(questions[questionIndex]),
-          RaisedButton(
-              child: Text('Answer 1'),
-              onPressed: () => print('Answer chosen 1')),
-          RaisedButton(
-              child: Text('Answer 2'),
-              onPressed: () => print('Answer chosen 2')),
-          RaisedButton(
-              child: Text('Answer 3'),
-              onPressed: () => {print('Answer chosen 3')})
+          RaisedButton(child: Text('Red'), onPressed: answerQuestion),
+          RaisedButton(child: Text('Green'), onPressed: answerQuestion),
+          RaisedButton(child: Text('Blue'), onPressed: answerQuestion)
         ]),
       ),
     );
