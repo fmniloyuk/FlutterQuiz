@@ -12,16 +12,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var questionIndex = 0;
+  var _questionIndex = 0;
 
-  void answerQuestion() {
-    //Change the state
+  void _answerQuestion() {
+    //Re-run the build method to change state
     setState(() {
-      if (questionIndex < questions.length-1) {
-        questionIndex = questionIndex + 1;
+      if (_questionIndex < questions.length - 1) {
+        _questionIndex = _questionIndex + 1;
       }
     }); // setState
-    print(questionIndex);
+    print(_questionIndex);
   }
 
   var questions = [
@@ -39,10 +39,10 @@ class _MyAppState extends State<MyApp> {
         ),
         // body
         body: Column(children: [
-          Text(questions[questionIndex]),
-          RaisedButton(child: Text('Red'), onPressed: answerQuestion),
-          RaisedButton(child: Text('Green'), onPressed: answerQuestion),
-          RaisedButton(child: Text('Blue'), onPressed: answerQuestion)
+          Text(questions[_questionIndex]),
+          RaisedButton(child: Text('Red'), onPressed: _answerQuestion),
+          RaisedButton(child: Text('Green'), onPressed: _answerQuestion),
+          RaisedButton(child: Text('Blue'), onPressed: _answerQuestion)
         ]),
       ),
     );
