@@ -1,12 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 // import 'dart:async';
 import 'package:flutter/material.dart';
-
 import './question.dart';
 
-void main() {
-  runApp(MyApp());
-}
+// void main() {
+//   runApp(MyApp());
+// }
+
+main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
