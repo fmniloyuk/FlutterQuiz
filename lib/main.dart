@@ -34,10 +34,8 @@ class _MyAppState extends State<MyApp> {
 
   void _answerQuestion() {
     setState(() {
-      if(_questionIndex < _questions.length - 1)
       _questionIndex += 1;
     });
-    print(_questionIndex);
   }
 
   @override
@@ -48,7 +46,11 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('My First App'),
         ),
-        body: Quiz(questions: _questions, questionIndex: _questionIndex, answerQuestion: _answerQuestion)
+        body: _questionIndex < _questions.length
+        ? Quiz(questions: _questions, questionIndex: _questionIndex, answerQuestion: _answerQuestion)
+        : Center(
+          child: Text('You did it!'),
+        )
       ),
     );
   }
