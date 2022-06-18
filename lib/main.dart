@@ -19,30 +19,81 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
-      'questionText': 'What\'s your favorite color?',
+      'questionText':
+          'ফৌজদারী কার্যবিধিতে ম্যাজিস্ট্রেটগণকে প্রধানত কত প্রকারে ভাগ করা হয়েছে?',
       'answers': [
-        {'text': 'Black', 'score': 10},
-        {'text': 'Red', 'score': 5},
-        {'text': 'Green', 'score': 3},
-        {'text': 'White', 'score': 1},
+        {'text': '(ক) ৪ প্রকার', 'score': 10},
+        {'text': '(খ) ২ প্রকার', 'score': 5},
+        {'text': '(গ) ৬ প্রকার', 'score': 3},
+        {'text': '(ঘ) ৩ প্রকার', 'score': 1},
       ],
     },
     {
-      'questionText': 'What\'s your favorite animal?',
+      'questionText':
+          'দায়রা জজ এবং অতিরিক্ত দায়রা জজ কি ধরণের দণ্ড দিতে পারে?',
       'answers': [
-        {'text': 'Rabbit', 'score': 3},
-        {'text': 'Snake', 'score': 11},
-        {'text': 'Elephant', 'score': 5},
-        {'text': 'Lion', 'score': 9},
+        {'text': '(ক) শুধু মৃত্যুদণ্ড', 'score': 3},
+        {'text': '(খ) ১০ বছরের জেল', 'score': 11},
+        {'text': '(গ) মৃত্যুদণ্ড এবং ১০ বছরের জেল', 'score': 5},
+        {'text': ' (ঘ) আইনের অনুমোদিত যে কোন দন্ড', 'score': 9},
       ],
     },
     {
-      'questionText': 'Who\'s your favorite instructor?',
+      'questionText': 'Complaint দায়ের করতে হয়।',
       'answers': [
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
+        {'text': '(ক) পুলিশের নিকট', 'score': 1},
+        {'text': '(খ) দায়রা জজের নিকট', 'score': 1},
+        {'text': '(গ) নির্বাহী ম্যাজিস্ট্রেটের নিকট', 'score': 1},
+        {'text': '(ঘ) বিচারিক ম্যাজিস্ট্রেটের নিকট', 'score': 1},
+      ],
+    },
+    {
+      'questionText':
+          '৪। ম্যাজিস্ট্রেট আটককৃত ব্যক্তিকে সর্বোচ্চ কত দিনের জন্য পুলিশ হেফাজতে রাখার আদেশ দিতে পারবে?',
+      'answers': [
+        {'text': '(ক) ১৫ দিন', 'score': 1},
+        {'text': '(খ) ৩০ দিন', 'score': 1},
+        {'text': '(গ) ১০ দিন', 'score': 1},
+        {'text': '(ঘ) ১২০ দিন', 'score': 1},
+      ],
+    },
+    {
+      'questionText':
+          '৫। যার বরাবর সমন জারি করা হয়, তার নিকট ব্যক্তিগত ভাবে সমনের কয়টি কপি দিয়ে “আসতে হবে?',
+      'answers': [
+        {'text': '(ক) ৪ টি', 'score': 1},
+        {'text': '(খ) ৩ টি', 'score': 1},
+        {'text': '(গ) ২ টি', 'score': 1},
+        {'text': '(ঘ) ১ টি', 'score': 1},
+      ],
+    },
+    {
+      'questionText':
+          '৬। মেট্রোপলিটন এলাকায় সামরিক শক্তি প্রয়োগ দ্বারা বেআইনী সমাবেশ ছত্রভঙ্গ করার আদেশ দিতে পারে?',
+      'answers': [
+        {'text': '(ক) নির্বাহী ম্যাজিস্ট্রেট', 'score': 1},
+        {'text': '(খ) থানার ভারপ্রাপ্ত পুলিশ অফিসার', 'score': 1},
+        {'text': '(গ) বিচারিক ম্যাজিস্ট্রেট', 'score': 1},
+        {'text': '(ঘ) পুলিশ কমিশনার', 'score': 1},
+      ],
+    },
+    {
+      'questionText': '৭। ১৪৪ ধারা আদেশ কত দিন পর্যন্ত বলবৎ থাকতে পারে',
+      'answers': [
+        {'text': '(ক) ৩০ দিন', 'score': 1},
+        {'text': '(খ) ১১০ দিন', 'score': 1},
+        {'text': '(গ) ৯০ দিন', 'score': 1},
+        {'text': '(ঘ) ৬০ দিন', 'score': 1},
+      ],
+    },
+    {
+      'questionText':
+          '৮। পুলিশকে আমল অযোগ্য অপরাধের তদন্তের নির্দেশ দিতে পারে ?',
+      'answers': [
+        {'text': '(ক) হাইকোর্ট', 'score': 1},
+        {'text': '(খ) মেট্রোপলিটন ম্যাজিস্ট্রেট', 'score': 1},
+        {'text': '(গ) ক্ষমতা প্রাপ্ত প্রথম শ্রেণীর ম্যাজিস্ট্রেট', 'score': 1},
+        {'text': '(ঘ) খ+গ', 'score': 1},
       ],
     },
   ];
