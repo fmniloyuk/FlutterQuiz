@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
           'দায়রা জজ এবং অতিরিক্ত দায়রা জজ কি ধরণের দণ্ড দিতে পারে?',
       'answers': [
         {'text': '(ক) শুধু মৃত্যুদণ্ড', 'score': 3},
-        {'text': '(খ) ১০ বছরের জেল', 'score': 11},
+        {'text': '(খ) ১০ বছরের জেল', 'score': 3},
         {'text': '(গ) মৃত্যুদণ্ড এবং ১০ বছরের জেল', 'score': 5},
         {'text': ' (ঘ) আইনের অনুমোদিত যে কোন দন্ড', 'score': 9},
       ],
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'Complaint দায়ের করতে হয়।',
       'answers': [
-        {'text': '(ক) পুলিশের নিকট', 'score': 1},
+        {'text': '(ক) পুলিশের নিকট', 'score': 5},
         {'text': '(খ) দায়রা জজের নিকট', 'score': 1},
         {'text': '(গ) নির্বাহী ম্যাজিস্ট্রেটের নিকট', 'score': 1},
         {'text': '(ঘ) বিচারিক ম্যাজিস্ট্রেটের নিকট', 'score': 1},
@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
       'questionText':
           '৪। ম্যাজিস্ট্রেট আটককৃত ব্যক্তিকে সর্বোচ্চ কত দিনের জন্য পুলিশ হেফাজতে রাখার আদেশ দিতে পারবে?',
       'answers': [
-        {'text': '(ক) ১৫ দিন', 'score': 1},
+        {'text': '(ক) ১৫ দিন', 'score': 3},
         {'text': '(খ) ৩০ দিন', 'score': 1},
         {'text': '(গ) ১০ দিন', 'score': 1},
         {'text': '(ঘ) ১২০ দিন', 'score': 1},
@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
       'questionText':
           '৫। যার বরাবর সমন জারি করা হয়, তার নিকট ব্যক্তিগত ভাবে সমনের কয়টি কপি দিয়ে “আসতে হবে?',
       'answers': [
-        {'text': '(ক) ৪ টি', 'score': 1},
+        {'text': '(ক) ৪ টি', 'score': 2},
         {'text': '(খ) ৩ টি', 'score': 1},
         {'text': '(গ) ২ টি', 'score': 1},
         {'text': '(ঘ) ১ টি', 'score': 1},
