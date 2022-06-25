@@ -2,9 +2,7 @@ on:
   pull_request:
     branches:
           - master
-  push:
-    branches:
-      - master      
+
 name: "Build & Release"
 jobs:
   build:
@@ -17,7 +15,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '2.2.0'
+          flutter-version: '3.0.3'
       - run: flutter clean
       - run: flutter upgrade
       - run: flutter pub get
@@ -36,11 +34,3 @@ jobs:
           artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
-
-
-
-
-
-
-# push to master, main, develop
-# pull request on main master
